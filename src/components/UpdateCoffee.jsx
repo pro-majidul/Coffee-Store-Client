@@ -6,8 +6,8 @@ const UpdateCoffee = () => {
         <div className="bg-addCoffee bg-no-repeat bg-cover bg-center p-10">
             <Link to='/' className="flex items-center py-4"> <FaLongArrowAltLeft />Back To Home </Link>
             <div className="bg-[#F4F3F0] p-10">
-           git     <form >
-                    <div className="grid grid-cols-2 gap-10">
+                <form >
+                    <div className="grid md:grid-cols-2 gap-10">
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Name</span>
