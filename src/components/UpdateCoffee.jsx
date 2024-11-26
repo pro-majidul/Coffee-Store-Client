@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const UpdateCoffee = () => {
     return (
         <div className="bg-addCoffee bg-no-repeat bg-cover bg-center p-10">
-            <Link to='/' className="flex items-center py-4"> <FaLongArrowAltLeft />Back To Home </Link>
+            <Link to='/' className="flex items-center  py-4"> <FaLongArrowAltLeft />Back To Home </Link>
             <div className="bg-[#F4F3F0] p-10">
                 <form >
                     <div className="grid md:grid-cols-2 gap-10">

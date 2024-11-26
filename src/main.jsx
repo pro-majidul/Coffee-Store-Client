@@ -9,19 +9,23 @@ import {
 } from "react-router-dom";
 import AddCoffee from './components/AddCoffee.jsx';
 import UpdateCoffee from './components/UpdateCoffee.jsx';
+import Banner from './components/Banner.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App />,
     children: [
-
       {
-        path : 'addCoffee',
-        element : <AddCoffee></AddCoffee>
-      },{
-        path : "updateCoffee",
-        element : <UpdateCoffee></UpdateCoffee>
+        path : "/",
+        element : <Banner></Banner>
+      },
+      {
+        path: 'addCoffee',
+        element: <AddCoffee></AddCoffee>
+      }, {
+        path: "updateCoffee",
+        element: <UpdateCoffee></UpdateCoffee>
       }
     ]
   },
@@ -29,6 +33,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-       <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </StrictMode>,
 )

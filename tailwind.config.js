@@ -9,7 +9,9 @@ export default {
       backgroundImage: {
         bgnav: "url('./src/assets/images/more/15.jpg')",
         addCoffee: "url('./src/assets/images/more/11.png')",
-        copyright: "url('./src/assets/images/more/24.jpg')"
+        copyright: "url('./src/assets/images/more/24.jpg')",
+        banner: "url('./src/assets/images/more/6.jpeg')",
+        
       }
     },
   },
