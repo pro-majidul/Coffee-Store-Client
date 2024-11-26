@@ -6,8 +6,8 @@ import battleIcons from '../assets/images/icons/4.png'
 
 const Feature = () => {
     return (
-        <div className='flex items-center justify-center'>
-            <div className=" stats w-11/12 mx-auto bg-transparent">
+        <div className='flex items-center justify-center py-5'>
+            <div className=" stats space-y-3 w-11/12 mx-auto bg-transparent">
                 <div className="stat">
                     <img className='w-8' src={capIcon} alt="" />
                     <div className="stat-title text-xl text-[#331A15]">Awesome Aroma</div>
