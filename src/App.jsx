@@ -11,10 +11,10 @@ function App() {
       <nav className='mt-1'>
         <Navbar></Navbar>
       </nav>
-      <main>
-        <section >
+      <main className='min-h-screen'>
+       
           <Outlet></Outlet>
-        </section>
+       
       </main>
       <footer>
         <Footer></Footer>

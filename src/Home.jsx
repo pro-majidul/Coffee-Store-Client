@@ -1,14 +1,16 @@
 import React from 'react';
+import Banner from './components/Banner';
+import Feature from './components/Feature';
 
 const Home = () => {
     return (
         <div>
-            <nav className='mt-1'>
-                <Navbar></Navbar>
-            </nav>
-            <section>
-                <Banner></Banner>
-            </section>
+
+            <Banner></Banner>
+            <div className='bg-[#ECEAE3]'>
+                <Feature></Feature>
+            </div>
+
         </div>
     );
 };
