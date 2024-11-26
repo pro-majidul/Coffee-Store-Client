@@ -13,15 +13,18 @@ import UpdateCoffee from './components/UpdateCoffee.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>
+    element: <App/>,
+    children: [
+
+      {
+        path : 'addCoffee',
+        element : <AddCoffee></AddCoffee>
+      },{
+        path : "updateCoffee",
+        element : <UpdateCoffee></UpdateCoffee>
+      }
+    ]
   },
-  {
-    path : 'addCoffee',
-    element : <AddCoffee></AddCoffee>
-  },{
-    path : "updateCoffee",
-    element : <UpdateCoffee></UpdateCoffee>
-  }
 ]);
 
 createRoot(document.getElementById('root')).render(
