@@ -1,7 +1,7 @@
 import React from 'react';
 import banner from '../assets/images/more/logo1.png'
 import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from 'react-icons/fa';
-import {  MdOutlineEmail } from 'react-icons/md';
+import { MdOutlineEmail } from 'react-icons/md';
 import { CiLocationOn } from 'react-icons/ci';
 
 const Footer = () => {
@@ -33,9 +33,9 @@ const Footer = () => {
                     <p className='md:text-3xl font-bold text-[#331A15]'>Get in Touch</p>
 
                     <div>
-                    <p className='flex my-2 items-center gap-2'><FaPhoneAlt color='#331A15' size={18} /> <a  href="tel:+8801402327683" className='text-xl text-[#331A15]' > 01402327683</a> </p>
-                    <p className='flex my-2 items-center gap-2'><MdOutlineEmail color='#331A15' size={24} /> <a href="mailto:majidul123tub@gmail.com"className='text-xl text-[#331A15]' > majidul123tub@gmail.com</a></p>
-                    <p className='flex my-2 items-center gap-2'><CiLocationOn color='#331A15' size={24} /> <a className='text-xl text-[#331A15]' > 72, Wall street, King Road, Dhaka</a></p>
+                        <p className='flex my-2 items-center gap-2'><FaPhoneAlt color='#331A15' size={18} /> <a href="tel:+8801402327683" className='text-xl text-[#331A15]' > 01402327683</a> </p>
+                        <p className='flex my-2 items-center gap-2'><MdOutlineEmail color='#331A15' size={24} /> <a href="mailto:majidul123tub@gmail.com" className='text-xl text-[#331A15]' > majidul123tub@gmail.com</a></p>
+                        <p className='flex my-2 items-center gap-2'><CiLocationOn color='#331A15' size={24} /> <a className='text-xl text-[#331A15]' > 72, Wall street, King Road, Dhaka</a></p>
 
 
 
@@ -51,7 +51,7 @@ const Footer = () => {
 
                 </nav>
             </footer>
-            <div className='bg-copyright bg-no-repeat bg-center bg-cover flex items-center justify-center'> 
+            <div className='bg-copyright bg-no-repeat bg-center bg-cover flex items-center justify-center'>
                 <p className='text-white text-center py-1'>Copyright Espresso Emporium ! All Rights Reserved</p>
             </div>
         </div>
