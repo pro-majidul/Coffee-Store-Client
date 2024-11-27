@@ -1,6 +1,6 @@
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import  Swal from 'sweetalert2';
+import Swal from 'sweetalert2';
 
 
 const AddCoffee = () => {
@@ -32,7 +32,7 @@ const AddCoffee = () => {
             .then(data => {
                 console.log(data)
                 if (data.insertedId) {
-                   Swal.fire({
+                    Swal.fire({
                         title: 'Success',
                         text: 'New Coffee Added Success',
                         icon: 'success',
@@ -45,6 +45,8 @@ const AddCoffee = () => {
         <div className="bg-addCoffee bg-no-repeat bg-cover bg-center p-10">
             <Link to='/' className="flex items-center  py-4"> <FaLongArrowAltLeft />Back To Home </Link>
             <div className="bg-[#F4F3F0] p-10">
+                <h3 className="text-xl md:text-3xl font-bold text-[#374151] text-center">Add New Coffee</h3>
+                <p className="w-8/12 text-[#374151] mx-auto text-center py-4">It is a long established fact that a reader will be distraceted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
                 <form onSubmit={handelupdateCoffee}>
                     <div className="grid md:grid-cols-2 gap-10">
                         <div className="form-control">

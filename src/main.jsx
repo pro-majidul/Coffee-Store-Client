@@ -10,11 +10,13 @@ import {
 import AddCoffee from './components/AddCoffee.jsx';
 import UpdateCoffee from './components/UpdateCoffee.jsx';
 import Home from './Home.jsx';
+import Error from './components/Error.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Error></Error>,
     children: [
       {
         path : "/",
@@ -25,7 +27,7 @@ const router = createBrowserRouter([
         path: 'addCoffee',
         element: <AddCoffee></AddCoffee>
       }, {
-        path: "updateCoffee",
+        path: "updateCoffee/:id",
         element: <UpdateCoffee></UpdateCoffee>
       }
     ]
