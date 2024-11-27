@@ -4,7 +4,7 @@ import { MdDelete, MdEdit } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
-const CoffeeCard = ({ coffee }) => {
+const CoffeeCard = ({ coffee , setCoffees,Coffees}) => {
 
 
     const handeldelete = (id) => {
@@ -34,6 +34,8 @@ const CoffeeCard = ({ coffee }) => {
                                 icon: "success"
                             });
                         }
+                        const remainingCoffee = Coffees.filter(cofe => cofe._id !== id);
+                        setCoffees(remainingCoffee);
                     })
 
             }
@@ -41,7 +43,7 @@ const CoffeeCard = ({ coffee }) => {
     }
 
     return (
-        <div className='bg-[#F5F4F1] p-3   opacity-100 flex items-center justify-between'>
+        <div className='bg-[#F5F4F1] p-3   opacity-100 md:flex items-center justify-between'>
             <div>
                 <img src={coffee.photo} alt={coffee.name} />
             </div>

@@ -7,7 +7,7 @@ import { CiLocationOn } from 'react-icons/ci';
 const Footer = () => {
     return (
 
-        <div className='bg-addCoffee bg-no-repeat bg-cover bg-center'>
+        <div className='bg-foterImg bg-no-repeat bg-cover bg-center'>
             <footer className="footer w-11/12 mx-auto text-neutral-content p-10">
                 <aside>
                     <img className='md:w-16 w-8' src={banner} alt="" />

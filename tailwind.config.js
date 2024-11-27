@@ -11,6 +11,7 @@ export default {
         addCoffee: "url('./src/assets/images/more/11.png')",
         copyright: "url('./src/assets/images/more/24.jpg')",
         banner: "url('./src/assets/images/more/6.jpeg')",
+        foterImg : 'url(https://i.ibb.co.com/NNhYW9X/13.jpg)'
         
       }
     },
